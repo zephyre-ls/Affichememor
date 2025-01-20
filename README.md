@@ -1,17 +1,59 @@
 # Affichememor
 Projet de création d'une application pratique pour mon quotidien.
-Mauvaise mémoire des titres de films mais bonne mémoire des affiches. 
-Des applications existent pour se souvenir des films visionné mais je ne les trouve pas adapté à mon utilisation. 
-Innondé d'informations ou de pub elles ne me satisfont pas, donc je ne les utilise pas.
-Donc autant créer ma propre application.
-Simple, épurée. 
-Nom du film + Affiche. Le tout triée par année. Simple & efficasse.
 
-Deroulement du projet:
+1. Préparation
 
-API gratuite = l'OMDb API (The Open Movie Database)  
-+ recherche manuel qd le film n'est pas disponible
+a. Objectifs de l'application
 
-Langage ? 
+    Créer une application pour gérer les films que j'ai vu avec un affichage simple : titre + affiche. Simple&Efficace
+    Pratique dans mon quotidien (mauvaise mémoire des noms de films mais bonne mémoire des affiches)
+    Les films seront classés par années de visionnage.
+    Intégrer une API  pour récupérer les affiches des films et utiliser une option manuelle si nécessaire.
 
-Plus tard : portatibilité sur androit pour mon portable.
+   // De nombreuses applications existent déjà, je le sais. Mais elles ont trop de fonctionnalités et sont souvent remplie de pub.
+   // Je souhaite qql chose d'épuré et adapté à ma consommation. 
+
+b. La bon stack technologique adapté à mon niveau de newbie.
+
+    Langage : JavaScript (React le front-end)
+    API : OMDb pour récupérer les affiches.
+    Backend (si nécessaire) : Node.js pour gérer les requêtes API ou stockage (tu peux envisager de le garder simple sans backend au départ).
+    Stockage local : LocalStorage ou IndexedDB pour stocker les films vus si tu n’as pas besoin d’une base de données externe.
+
+c. Préparation des ressources
+
+    Créer compte sur OMDb API pour récup  clé API gratuite.
+    Réfléchir à l'interface graphique, couleur, mise en page, adaptabilité etc 
+    Librairies utilisé pour gérer les affiches (ex react image)
+
+2. Développement
+
+a. Phase 1 : Mise en place du projet
+
+    Initialiser un projet React (create-react-app exemple).
+    Configurer le projet avec les dépendances nécessaires (par exemple, Axios pour faire des requêtes HTTP).
+    Créer un dossier et des sous dossier pour organiser tout le projet.
+
+b. Phase 2 : Intégration de l’API OMDb
+
+    Créer une fonction pour interroger l'API OMDb avec le titre du film et récupérer l'affiche.
+    Gérer la récupération des données : titres, affiches et années de sortie.
+    Tester l’API pour voir comment récupérer une affiche de film avec un titre donné.
+
+c. Phase 3 : Affichage des films dans l’application
+
+    Créer une page d’accueil avec un affichage épuré des films : titre et affiche.
+    Ajouter un système de tri par année de visionnage.
+    Gérer l’ajout manuel d’un film si l’API ne retourne pas d’affiche.
+    Stocker les films vus localement (en utilisant le LocalStorage ou une autre méthode simple).
+
+d. Phase 4 : Ajout de la fonctionnalité de tri par année
+
+    Créer un tri simple des films par année.
+    Ajouter des boutons ou des filtres pour trier les films selon l’année de visionnage.
+
+3. Améliorations dans le turfu
+a. Ajouter une fonctionnalité mobile
+
+    Lorsque l’application sur ordinateur est stable, envisager d’utiliser React Native pour rendre l’application portable sur Android.
+
