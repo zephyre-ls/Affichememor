@@ -7,7 +7,7 @@
 
 ### a. Objectifs de l'application
 
-- Créer une application pour gérer les films que j'ai vus avec un affichage simple : titre + affiche. Simple & Efficace.
+- Créer une application pour gérer les films que j'ai vus avec un affichage simple : titre + affiche + date sortie du film (pask j'aime bien connaitre cette information). Simple & Efficace.
 - Pratique dans mon quotidien (mauvaise mémoire des noms de films mais bonne mémoire des affiches).
 - Les films seront classés par années de visionnage.
 - Intégrer une API pour récupérer les affiches des films et utiliser une option manuelle si nécessaire.
@@ -19,7 +19,7 @@
 
 - **Langage :** JavaScript (React pour le front-end).
 - **API :** OMDb pour récupérer les affiches.
-- **Backend (si nécessaire) :** Node.js pour gérer les requêtes API ou stockage (tu peux envisager de le garder simple sans backend au départ).
+- **Backend (si nécessaire) :** Node.js pour gérer les requêtes API ou stockage.
 - **Stockage local :** LocalStorage ou IndexedDB pour stocker les films vus si tu n’as pas besoin d’une base de données externe.
 
 ### c. Préparation des ressources
