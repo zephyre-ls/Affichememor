@@ -24,7 +24,7 @@
 - **Langage :** JavaScript (React pour le front-end).
 - **API :** OMDb pour récupérer les affiches. 1000 daily limit. Key récupérée
 - *Backend (si nécessaire) :** Node.js pour gérer les requêtes API ou stockage.
-- **Stockage local :** LocalStorage ou IndexedDB pour stocker les films vus si tu n’as pas besoin d’une base de données externe.
+- **Stockage local :** LocalStorage ou IndexedDB pour stocker les films vus.
 
 ### c. Préparation des ressources
 
